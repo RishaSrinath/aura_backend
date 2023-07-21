@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shop_admins",
+  "info": {
+    "name": "shop_admins"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "shop": {
+      "via": "shop_admins",
+      "model": "shops"
+    },
+    "name": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string",
+      "maxLength": 10,
+      "minLength": 10
+    }
+  }
+}

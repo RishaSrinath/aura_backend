@@ -1,0 +1,36 @@
+{
+  "name": "auraa-api",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "strapi": "3.1.0-beta.0",
+    "strapi-admin": "3.1.0-beta.0",
+    "strapi-connector-mongoose": "3.1.0-beta.0",
+    "strapi-plugin-content-manager": "3.1.0-beta.0",
+    "strapi-plugin-content-type-builder": "3.1.0-beta.0",
+    "strapi-plugin-email": "3.1.0-beta.0",
+    "strapi-plugin-upload": "3.1.0-beta.0",
+    "strapi-plugin-users-permissions": "3.1.0-beta.0",
+    "strapi-utils": "3.1.0-beta.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "87e43c85-8836-4a18-b5f5-f8da823b3002"
+  },
+  "engines": {
+    "node": "12.14.1",
+    "npm": "6.14.4"
+  },
+  "license": "MIT"
+}

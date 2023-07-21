@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "conversions",
+  "info": {
+    "name": "conversions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "smith": {
+      "type": "string"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "bullion": {
+      "model": "bullion"
+    },
+    "quantity": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "boolean"
+    }
+  }
+}

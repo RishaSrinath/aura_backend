@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoices",
+  "info": {
+    "name": "invoices"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "number": {
+      "type": "string"
+    },
+    "items": {
+      "collection": "ornaments",
+      "via": "invoice"
+    },
+    "tax": {
+      "type": "decimal"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "discount": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "total_installments": {
+      "type": "integer"
+    },
+    "paid_installments": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "invoice_transactions": {
+      "collection": "invoice-transactions",
+      "via": "invoice"
+    },
+    "customer": {
+      "model": "customer"
+    },
+    "shop": {
+      "model": "shops"
+    },
+    "path": {
+      "type": "string"
+    }
+  }
+}

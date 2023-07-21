@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "taxes",
+  "info": {
+    "name": "tax"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "decimal"
+    },
+    "shop": {
+      "model": "shops"
+    },
+    "split": {
+      "type": "json"
+    }
+  }
+}

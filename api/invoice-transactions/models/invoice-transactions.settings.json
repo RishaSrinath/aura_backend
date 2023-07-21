@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "invoice_transactions",
+  "info": {
+    "name": "invoice_transactions"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "invoice": {
+      "via": "invoice_transactions",
+      "model": "invoices"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "amount": {
+      "type": "decimal"
+    }
+  }
+}

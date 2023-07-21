@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bullions",
+  "info": {
+    "name": "bullion"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "decimal"
+    },
+    "shop": {
+      "model": "shops"
+    }
+  }
+}

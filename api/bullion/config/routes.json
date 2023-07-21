@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/bullions",
+      "handler": "bullion.find",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bullions/count",
+      "handler": "bullion.count",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/bullions/:id",
+      "handler": "bullion.findOne",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/bullions",
+      "handler": "bullion.create",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/bullions/:id",
+      "handler": "bullion.update",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/bullions/:id",
+      "handler": "bullion.delete",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ornaments",
+      "handler": "ornaments.find",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ornaments/count",
+      "handler": "ornaments.count",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ornaments/:id",
+      "handler": "ornaments.findOne",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ornaments",
+      "handler": "ornaments.create",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ornaments/:id",
+      "handler": "ornaments.update",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ornaments/:id",
+      "handler": "ornaments.delete",
+      "config": {
+        "policies": ["isAuthenticated"]
+      }
+    }
+  ]
+}

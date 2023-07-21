@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shops",
+  "info": {
+    "name": "shops"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mobile": {
+      "type": "string",
+      "maxLength": 10,
+      "minLength": 10
+    },
+    "gst": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "shop_admins": {
+      "collection": "shop-admins",
+      "via": "shop"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "last_invoice": {
+      "type": "json"
+    }
+  }
+}

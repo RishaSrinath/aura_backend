@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ornaments",
+  "info": {
+    "name": "ornaments"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer",
+      "default": 0
+    },
+    "gross_weight": {
+      "type": "decimal"
+    },
+    "net_weight": {
+      "type": "decimal"
+    },
+    "vat": {
+      "type": "decimal"
+    },
+    "material": {
+      "model": "hsn"
+    },
+    "code": {
+      "type": "string",
+      "unique": true
+    },
+    "unit": {
+      "type": "string"
+    },
+    "stone_price": {
+      "type": "decimal"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "shop": {
+      "model": "shops"
+    },
+    "invoice": {
+      "via": "items",
+      "model": "invoices"
+    }
+  }
+}
